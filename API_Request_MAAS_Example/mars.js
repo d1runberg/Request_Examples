@@ -6,7 +6,7 @@ request('http://marsweather.ingenology.com/v1/latest/?format=json', function (er
   if (!error && response.statusCode == 200) {
      //dase the raw string into JSON object
      var info = JSON.parse(data);
-     //log the JSON object to the console   
+     //log the JSON object to the console
      console.log(info)
   }
 });
